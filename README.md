@@ -1,7 +1,18 @@
 # Noteful Client (Reprised)
-per: https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment
+per: [Checkpoint 19 Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment)
 
 <br/>
+
+
+## Guidance / Parallels
+
+Checkpoint 17: RESTful APIs...
+* [Assignment: Full-stack update of Bookmarks project](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#assignment)
+* [Walk-thru (via Blogful project)](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#full-stack-rest)
+* [Thinkful Solution(s)](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#solution)
+* [myRepo](https://github.com/artificialarea/bookmarks-app/tree/me-PATCH)
+
+<br />
 
 ## Origin Story
 Cloned from Thinkful/tomatau repo, because I've yet to complete my own Noteful React Client App =/ 

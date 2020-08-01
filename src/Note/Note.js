@@ -25,8 +25,10 @@ export default class Note extends React.Component {
             .then(res => {
                 if (!res.ok)
                     return res.json().then(e => Promise.reject(e))
-                // return res.json()
-                // because api.res.status(204).end() there is no content on success, so skip res.json()
+                // because api response is status(204).end() 
+                // here is no content on promise success
+                // so skip return of res.json()
+                // otherwise app breaks with Uncaught (in promise) "SyntaxError: Unexpected end of JSON input"
 
             })
             .then(() => {

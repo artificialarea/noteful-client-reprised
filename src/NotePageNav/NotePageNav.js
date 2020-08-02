@@ -37,8 +37,8 @@ export default class NotePageNav extends React.Component {
                 >
                     <FontAwesomeIcon icon='chevron-left' />
                     <br />
-          Back
-        </CircleButton>
+                    Back
+                </CircleButton>
                 {folder && (
                     <h3 className='NotePageNav__folder-name'>
                         {folder.name}

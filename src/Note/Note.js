@@ -7,9 +7,11 @@ import config from '../config'
 import './Note.css'
 
 export default class Note extends React.Component {
+
     static defaultProps = {
         onDeleteNote: () => { },
     }
+
     static contextType = ApiContext;
 
     handleClickDelete = e => {
@@ -40,7 +42,7 @@ export default class Note extends React.Component {
                 console.error({ error })
             })
     }
-
+    
     render() {
         const { name, id, modified } = this.props
         return (
@@ -57,15 +59,17 @@ export default class Note extends React.Component {
                 >
                     <FontAwesomeIcon icon='trash-alt' />
                     {' '}
-          remove
-        </button>
+                    remove
+                </button>
                 <div className='Note__dates'>
                     <div className='Note__dates-modified'>
                         Modified
-            {' '}
+                        {' '}
                         <span className='Date'>
                             {format(modified, 'Do MMM YYYY')}
                         </span>
+                        {' '}
+                        <Link to={`/edit/${id}`}>Edit Note</Link>
                     </div>
                 </div>
             </div>

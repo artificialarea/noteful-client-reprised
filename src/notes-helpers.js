@@ -1,44 +1,18 @@
-// export const findFolder = (folders=[], folderId) =>
-//   folders.find(folder => folder.id === folderId)
-
-// export const findNote = (notes=[], noteId) =>
-//   notes.find(note => note.id === noteId)
-
-// export const getNotesForFolder = (notes=[], folderId) => (
-//   (!folderId)
-//     ? notes
-//     : notes.filter(note => note.folderId === folderId)
-// )
-
-// export const countNotesForFolder = (notes=[], folderId) =>
-//   notes.filter(note => note.folderId === folderId).length
-
-
-
 // REFACTOR:
 // In order to get this to work with my DB (no problem with JSON SERVER)
-// had to change all equality operators from
-// strict equality (===)
-// to
-// abstract equality (==)
-// WHY? 
-// Ergo, get compile warning (not error, per se): "Expected '===' and instead saw '=='  eqeqeq"
-// REFACTOR AGAIN to keep strict equality?
+// had to convert certain ids to integers via parseInt
 
 export const findFolder = (folders=[], folderId) =>
-  folders.find(folder => folder.id == folderId)
+  folders.find(folder => folder.id === parseInt(folderId))
 
 export const findNote = (notes=[], noteId) =>
-  notes.find(note => note.id == noteId)
+  notes.find(note => note.id === parseInt(noteId))
 
 export const getNotesForFolder = (notes=[], folderId) => (
   (!folderId)
     ? notes
-    : notes.filter(note => note.folderId == folderId)
+    : notes.filter(note => note.folderId === parseInt(folderId))
 )
 
 export const countNotesForFolder = (notes=[], folderId) =>
-  notes.filter(note => note.folderId == folderId).length
-
-
-
+  notes.filter(note => note.folderId === parseInt(folderId)).length

@@ -7,6 +7,7 @@ import NoteListMain from '../NoteListMain/NoteListMain'
 import NotePageMain from '../NotePageMain/NotePageMain'
 import AddFolder from '../AddFolder/AddFolder'
 import AddNote from '../AddNote/AddNote'
+import EditNote from '../EditNote/EditNote'
 import ApiContext from '../ApiContext'
 import config from '../config'
 import './App.css'
@@ -66,6 +67,17 @@ class App extends Component {
         })
     }
 
+    handleUpdateNote = updatedNote => {
+        const newNotes = this.state.notes.map(note => 
+            (note.id !== updatedNote.id)
+                ? note
+                : updatedNote
+        )
+        this.setState({
+            notes: newNotes
+        })
+    }
+
     renderNavRoutes() {
         return (
             <>
@@ -87,6 +99,10 @@ class App extends Component {
                 />
                 <Route
                     path='/add-note'
+                    component={NotePageNav}
+                />
+                <Route
+                    path='/edit/:noteId'
                     component={NotePageNav}
                 />
             </>
@@ -116,6 +132,10 @@ class App extends Component {
                     path='/add-note'
                     component={AddNote}
                 />
+                <Route
+                    path='/edit/:noteId'
+                    component={EditNote}
+                />
             </>
         )
     }
@@ -127,6 +147,7 @@ class App extends Component {
             addFolder: this.handleAddFolder,
             addNote: this.handleAddNote,
             deleteNote: this.handleDeleteNote,
+            updateNote: this.handleUpdateNote,
         }
         return (
             <ApiContext.Provider value={value}>

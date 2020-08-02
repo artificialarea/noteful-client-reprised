@@ -51,6 +51,13 @@ exports[`Note component renders a .Note by default 1`] = `
       >
         Invalid Date
       </span>
+       
+      <Link
+        replace={false}
+        to="/edit/undefined"
+      >
+        Edit Note
+      </Link>
     </div>
   </div>
 </div>
@@ -109,6 +116,13 @@ exports[`Note component renders the Note given props 1`] = `
       >
         15th Jan 2019
       </span>
+       
+      <Link
+        replace={false}
+        to="/edit/a"
+      >
+        Edit Note
+      </Link>
     </div>
   </div>
 </div>

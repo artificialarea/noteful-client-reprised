@@ -1,12 +1,6 @@
 # Noteful Client (Reprised)
 
-## Deploying Full-Stack Noteful
-
-per: [Node & Postgres / Checkpoint 20: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment)
-
-
-
-### Guidance
+## Deploying Noteful Client
 
 [React / Checkpoint 18: Deploying to Production...](https://courses.thinkful.com/react-v1/checkpoint/18)
 

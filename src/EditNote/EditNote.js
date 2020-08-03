@@ -39,7 +39,6 @@ export default class EditNote extends Component {
         // QUESTION: Why make another fetch call to get note object 
         // when it's already accessible in überstate/context? REFACTOR?
         const { noteId } = this.props.match.params;
-        console.log(this.props.match.params)
         fetch(config.API_ENDPOINT + `/notes/${noteId}`, {
             method: 'GET',
             headers: {
@@ -118,7 +117,6 @@ export default class EditNote extends Component {
     render() {
         const { folders = [] } = this.context;
         const { error, name, folderId, content } = this.state;
-        console.log(this.props)
         return (
             <section className='EditNote'>
                 <h2>Create a note</h2>

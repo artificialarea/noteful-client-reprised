@@ -1,16 +1,32 @@
 # Noteful Client (Reprised)
-per: [Checkpoint 19 Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment)
+
+## Deploying Full-Stack Noteful
+
+per: [Node & Postgres / Checkpoint 20: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment)
+
+
+
+### Guidance
+
+[React / Checkpoint 18: Deploying to Production...](https://courses.thinkful.com/react-v1/checkpoint/18)
+
 
 <br/>
 
 
-## Guidance / Parallels
+## Add Relationships to Noteful
+
+per: [Node & Postgres / Checkpoint 19: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment)
+
+**branches:** 01-sync-with-db > 02-CRUD-complete
+
+### Guidance
 
 Checkpoint 17: RESTful APIs...
 * [Assignment: Full-stack update of Bookmarks project](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#assignment)
 * [Walk-thru (via Blogful project)](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#full-stack-rest)
 * [Thinkful Solution(s)](https://courses.thinkful.com/node-postgres-v1/checkpoint/17#solution)
-* [myRepo](https://github.com/artificialarea/bookmarks-app/tree/me-PATCH)
+* [myRepo: bookmarks-app](https://github.com/artificialarea/bookmarks-app/tree/me-PATCH)
 
 <br />
 
@@ -24,8 +40,15 @@ Additional adjustments made to establish a clean-slate, so to speak:
 
 <br />
 
-## Noteful API (JSON Server)
-* **git clone repo**: https://github.com/tomatau/noteful-json-server
+## Associated Server(s)
+
+### My Noteful API
+
+https://github.com/artificialarea/noteful-api
+
+
+### Noteful JSON Server
+* **repo**: https://github.com/tomatau/noteful-json-server
 * **database**: http://localhost:9090/db
 * **documentation**:
   * http://localhost:9090/

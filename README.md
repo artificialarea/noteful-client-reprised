@@ -1,15 +1,17 @@
 # Noteful Client (Reprised)
 
-## Deploying Full-Stack Noteful
-
-per: [Node & Postgres / Checkpoint 20: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment)
-
+Deployed to Production: **https://noteful-client-liart.vercel.app**
 
 <br />
 
+## Deploying Full-Stack Noteful
+
+Assignment per: [**Node & Postgres / Checkpoint 20**](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment)
+**branch:** master
+
 ### Guidance
 
-[React / Checkpoint 18: Deploying to Production...](https://courses.thinkful.com/react-v1/checkpoint/18)
+Exercises per: [**React / Checkpoint 18: Deploying to Production...**](https://courses.thinkful.com/react-v1/checkpoint/18)
 
 **branch:** 03-vercel-deploy-v1
 
@@ -18,7 +20,7 @@ per: [Node & Postgres / Checkpoint 20: Assignment](https://courses.thinkful.com/
 
 ## Add Relationships to Noteful
 
-per: [Node & Postgres / Checkpoint 19: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment)
+Assignment per: [**Node & Postgres / Checkpoint 19**](https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment)
 
 **branches:** 01-sync-with-db > 02-CRUD-complete
 

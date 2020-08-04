@@ -5,6 +5,7 @@
 per: [Node & Postgres / Checkpoint 20: Assignment](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment)
 
 
+<br />
 
 ### Guidance
 
